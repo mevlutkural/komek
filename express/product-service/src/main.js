@@ -5,7 +5,7 @@ async function bootstrap() {
   const port = 3000;
 
   app.get("/products", (req, res) => {
-    return res.json({message: "OK"});
+    return res.json({ message: "OK" });
   });
 
   app.listen(port, () => {
@@ -14,3 +14,9 @@ async function bootstrap() {
 }
 
 bootstrap();
+
+function getName(name) {
+  return `Hello ${name}`;
+}
+
+getName();
